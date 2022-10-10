@@ -1,38 +1,1009 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  text-align: justify;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: transparent;
+}
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+.navBarContainer {
+  background-image: linear-gradient(
+    to top right,
+    rgb(155, 104, 10),
+    rgb(12, 137, 220)
+  );
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px;
+  padding-right: 60px;
+  align-items: center;
+}
+.navBarContainer h4 {
+  font-size: 18px;
+  margin-right: 10%;
+}
+.navBarContainer button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+.fa {
+  color: whitesmoke;
+  height: 15px;
+  font-size: 25px;
+}
+.fa:hover {
+  color: rgb(45, 45, 45);
+}
+.homeNameLink {
+  position: absolute;
+  right: 85%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navLink {
+  margin: 12px;
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+  font-weight: bold;
+}
+.navLink:hover {
+  color: whitesmoke;
+}
+a:hover {
+  color: inherit;
+}
+.navLinkSelected {
+  color: whitesmoke;
+  margin: 25px;
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+/* ----Logo animation------  */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---------------------------------Light/Dark mode styles-------------- */
+.navBarContainerDark {
+  background-image: linear-gradient(
+    to top right,
+    rgb(67, 44, 0),
+    rgb(1, 41, 67)
+  );
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px;
+  padding-right: 60px;
+}
+/* ----------------------------Dark mode styles------------------------- */
+.navLinkDark {
+  margin: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.navLinkDark:hover {
+  color: whitesmoke;
+}
+.homeContainerDark {
+  background-color: rgb(45, 45, 45);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.contactContainerDark {
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  flex-direction: row;
+}
+.contactContainerDark span,
+h1 {
+  color: whitesmoke;
+}
+.contactContainerDark .city p {
+  color: whitesmoke;
+}
+.contactContainerDark h5 {
+  color: whitesmoke;
+}
+.portFolioContainerDark {
+  background-color: rgb(45, 45, 45);
+}
+.homeContainerDark section {
+  color: whitesmoke;
+}
+.homeContainerDark .aboutMe div {
+  color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-inner i ul li {
+  color: rgb(45, 45, 45);
+}
+.homeContainerDark .jobLinks a {
+  color: whitesmoke;
+}
+/* --------------------------Light mode styles-------------------- */
+.homeContainer {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContainer {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+}
+.contactContainer h1,
+h5 {
+  color: rgb(45, 45, 45);
+}
+.portFolioContainer {
+  background-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ---------------------------------Home------------------------------ */
+/* ------------------------Hola Soy Jose Gabriel--------------------------- */
+.aboutMe {
+  margin-top: 60px;
+
+  margin-bottom: 50px;
+}
+
+.facePic {
+  position: absolute;
+  left: 82%;
+  top: 25%;
+  height: 270px;
+  border-radius: 1em;
+}
+
+.socialMediaDisplayer {
+  position: relative;
+  left: 30px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 22%;
+  align-items: center;
+}
+.socialMediaDisplayer p {
+  font-size: 25px;
+  font-weight: 700;
+}
+.arrow {
+  margin-left: 10px;
+  font-size: 45px;
+}
+.arrow:hover {
+  color: rgb(146, 99, 12);
+}
+
+.socialMediaContainer {
+  background-image: url("../public/images/socialMediaBG.jpg");
+  filter: grayscale(20%);
+  background-color: rgb(216, 216, 216);
+  position: absolute;
+  left: 35px;
+  width: 300px;
+  height: 500px;
+  border-radius: 1em;
+}
+.socialIcons {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.socialIcons i a {
+  font-size: 40px;
+  text-decoration: none;
+  color: inherit;
+  color: rgb(255, 255, 255);
+
+  margin-left: 41%;
+}
+.socialIcons a:hover {
+  color: rgb(146, 99, 12);
+}
+.holaSoyJose {
+  width: 50%;
+  color: rgb(45, 45, 45);
+  margin-left: 25%;
+  margin-bottom: 50px;
+}
+.holaSoyJose p:nth-child(1) {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.holaSoyJose p:nth-child(2) {
+  font-size: 25px;
+}
+.jobLinks {
+  position: absolute;
+  top: 63%;
+  left: 85%;
+}
+.jobLinks a {
+  font-size: 33px;
+  margin: 3px;
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+}
+.jobLinks a:hover {
+  color: rgb(173, 118, 14);
+}
+/* ---------------------------------------Skills------------------------------ */
+.bachelorPic {
+  position: absolute;
+  right: 210%;
+  bottom: 2%;
+  border-radius: 1em;
+}
+.skills {
+  color: rgb(45, 45, 45);
+  width: 50%;
+}
+.skills p:nth-child(1) {
+  font-weight: bold;
+  font-size: 50px;
+}
+.skills p:nth-child(2) {
+  font-size: 25px;
+}
+.skills p:nth-child(3) {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.tech {
+  display: flex;
+  position: relative;
+  left: 25%;
+}
+.Development {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1%;
+}
+.Development i:nth-child(1) {
+  font-weight: bold;
+  font-size: 45px;
+  position: relative;
+  right: 55px;
+}
+
+.tech div i:nth-child(1) {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.tech div i {
+  margin: 3px;
+  text-align: left;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.tech div span {
+  margin-left: 10px;
+}
+.innerDevelopment {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 1%;
+}
+
+.skillsTittle {
+  font-weight: bold;
+  font-size: 35px;
+  position: relative;
+  right: 5px;
+}
+.WorkingTools i:nth-child(1) {
+  font-weight: bold;
+  font-size: 45px;
+  position: relative;
+  right: 55px;
+}
+.WorkingTools {
+  width: 40%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+/* ----------------------------------------Education-------------------------- */
+
+.education {
+  color: rgb(45, 45, 45);
+  width: 50%;
+  margin-top: 10%;
+}
+.education p:nth-child(1) {
+  font-weight: bold;
+  font-size: 50px;
+}
+.education p:nth-child(2) {
+  font-size: 25px;
+}
+.education p:nth-child(3) {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.educationContainer {
+  display: flex;
+  position: relative;
+  left: 25%;
+}
+.career {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1%;
+  position: relative;
+  right: 10%;
+}
+.career i:nth-child(1) {
+  font-weight: bold;
+  font-size: 45px;
+  position: relative;
+  right: 55px;
+}
+
+.educationContainer div i:nth-child(1) {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.educationContainer div i {
+  margin: 3px;
+  text-align: left;
+  font-size: 25px;
+  font-style: normal;
+}
+.carousel-inner {
+  background-color: rgb(216, 216, 216);
+  border-radius: 1em;
+  height: 250px;
+}
+.educationContainer div span {
+  margin-left: 10px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 20px;
+  text-align: center;
+}
+.carousel-item {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.carousel-inner div:nth-child(1) {
+  font-weight: bold;
+  font-size: 45px;
+}
+.carousel-inner div:nth-child(3) img,
+div:nth-child(4) img {
+  width: 50%;
+}
+.techCareer {
+  width: 100%;
+
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+/* ----------------------Experience ----------------------- */
+.jobExperience {
+  color: rgb(45, 45, 45);
+  width: 50%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.jobExperience p:nth-child(1) {
+  font-weight: bold;
+  font-size: 50px;
+}
+.jobExperience p:nth-child(2) {
+  font-size: 25px;
+}
+
+.jobExperienceContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.jobExperienceContainer div i:nth-child(1) {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.jobExperienceContainer div i {
+  margin: 3px;
+  text-align: left;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.jobExperienceContainer div span {
+  margin-left: 10px;
+}
+.companies {
+  display: flex;
+  justify-content: space-around;
+}
+.companies {
+  display: flex;
+  justify-content: space-around;
+}
+.companies div {
+  width: 60%;
+  margin: 20px;
+}
+
+.companies div span {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+.jobDescription {
+  margin-top: 2rem;
+}
+.companies div:nth-child(2) {
+  width: 7px;
+  border-radius: 40%;
+}
+/* -----------------------------------Footer---------------------- */
+.insivibleFooter {
+  background-color: transparent;
+  height: 200px;
+  width: auto;
+}
+.footerContainer {
+  background-color: rgb(45, 45, 45);
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  z-index: -1;
+}
+.nameContainer {
+  color: whitesmoke;
+  position: fixed;
+  bottom: 5%;
+
+  left: 30%;
+  z-index: 2;
+}
+
+.quoteContainer {
+  color: whitesmoke;
+  position: fixed;
+  bottom: 8%;
+  background-color: rgb(45, 45, 45);
+  left: 50%;
+  z-index: 2;
+}
+
+/* --------------------------- Media Querries---------------------- */
+
+@media (max-width: 500px) {
+  /* ------------navBar ------------ */
+  .navBarContainer h4 {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .homeNameLink {
+    position: absolute;
+    right: 69%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    margin-left: 5px;
+  }
+
+  /* ------------------------Hola Soy Jose Gabriel--------------------------- */
+
+  .facePic {
+    left: 62%;
+    top: 25%;
+    height: 190px;
+  }
+  .socialMediaDisplayer {
+    display: none;
+  }
+  .socialMediaDisplayer p {
+    font-size: 15px;
+  }
+  .socialMediaContainer {
+    position: absolute;
+    left: 65px;
+    width: 300px;
+    height: auto;
+    top: 65%;
+    display: none;
+  }
+  .socialIcons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .socialIcons i a {
+    font-size: 30px;
+    color: rgb(210, 154, 43);
+  }
+  .socialIcons a:hover {
+    color: rgb(199, 199, 199);
+  }
+  .holaSoyJose {
+    position: relative;
+    right: 78px;
+    width: 50%;
+    color: rgb(45, 45, 45);
+    margin-left: 25%;
+    margin-bottom: 50px;
+    bottom: 40px;
+  }
+  .holaSoyJose p:nth-child(1) {
+    font-size: 25px;
+  }
+  .holaSoyJose p:nth-child(2) {
+    font-size: 20px;
+  }
+  .jobLinks {
+    top: 52%;
+    left: 70%;
+  }
+
+  /* ---------------------------------------Skills------------------------------ */
+  .bachelorPic {
+    position: absolute;
+    right: 210%;
+    bottom: 2%;
+    border-radius: 1em;
+  }
+  .skills {
+    width: 70%;
+    margin-top: 25px;
+  }
+  .skills p:nth-child(1) {
+    font-size: 30px;
+  }
+  .skills p:nth-child(2) {
+    font-size: 20px;
+  }
+  .skills p:nth-child(3) {
+    font-size: 25px;
+  }
+
+  .Development {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1%;
+  }
+  .Development i:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    right: 75px;
+  }
+
+  .tech div i:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .tech div i {
+    margin: 3px;
+    font-size: 18px;
+    position: relative;
+    right: 25px;
+  }
+
+  .skillsTittle {
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    right: 5px;
+  }
+
+  /* ----------------------------------------Education-------------------------- */
+  .education {
+    color: rgb(45, 45, 45);
+    width: 70%;
+    margin-top: 10%;
+  }
+  .education p:nth-child(1) {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .education p:nth-child(2) {
+    font-size: 20px;
+  }
+  .education p:nth-child(3) {
+    font-size: 25px;
+  }
+  .educationContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 5%;
+  }
+  .career {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 15px;
+  }
+  .educationContainer div i:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .educationContainer div i {
+    margin: 3px;
+    text-align: left;
+    font-size: 25px;
+    font-style: normal;
+  }
+  .techCareer {
+    width: 120%;
+    position: relative;
+    right: 50px;
+  }
+  .tech {
+    display: flex;
+    position: relative;
+    left: 20%;
+  }
+  .bachelorPic {
+    display: none;
+  }
+  .carousel-inner {
+    height: 200px;
+  }
+
+  li {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  /* ----------------------Experience ----------------------- */
+  .jobExperience {
+    color: rgb(45, 45, 45);
+    width: 70%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  .jobExperience p:nth-child(1) {
+    font-size: 30px;
+  }
+  .jobExperience p:nth-child(2) {
+    font-size: 20px;
+  }
+  .jobExperienceContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .jobExperienceContainer div i:nth-child(1) {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .jobExperienceContainer div i {
+    margin: 3px;
+    text-align: left;
+    font-size: 25px;
+    font-style: normal;
+  }
+  .jobExperienceContainer div span {
+    margin-left: 10px;
+  }
+  .companies {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .companies div {
+    width: 80%;
+    margin: 20px;
+  }
+  .companies div:nth-child(2) {
+    width: 80%;
+
+    border-radius: 40%;
+  }
+  /* -----------------------------------Footer---------------------- */
+  .insivibleFooter {
+    width: 100%;
+  }
+  .nameContainer {
+    color: whitesmoke;
+    position: fixed;
+    bottom: 5%;
+    left: 30%;
+    z-index: 2;
+  }
+  .quoteContainer {
+    bottom: 15%;
+    left: 10%;
+  }
+  .quoteContainer h4 {
+    font-size: 15px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1440px) {
+  /* ------------navBar ------------ */
+  .navBarContainer h4 {
+    display: none;
+  }
+  .homeNameLink {
+    position: absolute;
+    right: 69%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    margin-left: 5px;
+  }
+
+  /* ------------------------Hola Soy Jose Gabriel--------------------------- */
+
+  .facePic {
+    left: 72%;
+    top: 15%;
+    height: 190px;
+  }
+  .socialMediaDisplayer {
+    display: none;
+  }
+
+  .socialMediaContainer {
+    position: absolute;
+    left: 65px;
+    width: 300px;
+    height: auto;
+    top: 65%;
+    display: none;
+  }
+  .socialIcons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .socialIcons i a {
+    font-size: 30px;
+    color: rgb(210, 154, 43);
+  }
+  .socialIcons a:hover {
+    color: rgb(199, 199, 199);
+  }
+  .holaSoyJose {
+    position: relative;
+    right: 78px;
+    width: 50%;
+    color: rgb(45, 45, 45);
+    margin-left: 25%;
+    margin-bottom: 50px;
+    bottom: 40px;
+  }
+  .holaSoyJose p:nth-child(1) {
+    font-size: 25px;
+  }
+  .holaSoyJose p:nth-child(2) {
+    font-size: 20px;
+  }
+  .jobLinks {
+    top: 42%;
+    left: 76%;
+  }
+
+  /* ---------------------------------------Skills------------------------------ */
+  .bachelorPic {
+    position: absolute;
+    right: 210%;
+    bottom: 2%;
+    border-radius: 1em;
+  }
+  .skills {
+    width: 70%;
+    margin-top: 25px;
+  }
+  .skills p:nth-child(1) {
+    font-size: 30px;
+  }
+  .skills p:nth-child(2) {
+    font-size: 20px;
+  }
+  .skills p:nth-child(3) {
+    font-size: 25px;
+  }
+
+  .Development {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1%;
+  }
+  .Development i:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    right: 75px;
+  }
+
+  .tech div i:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .tech div i {
+    margin: 3px;
+    font-size: 18px;
+    position: relative;
+    right: 25px;
+  }
+
+  .skillsTittle {
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    right: 5px;
+  }
+
+  /* ----------------------------------------Education-------------------------- */
+  .education {
+    color: rgb(45, 45, 45);
+    width: 70%;
+    margin-top: 10%;
+  }
+  .education p:nth-child(1) {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .education p:nth-child(2) {
+    font-size: 20px;
+  }
+  .education p:nth-child(3) {
+    font-size: 25px;
+  }
+  .educationContainer {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    left: 5%;
+  }
+  .career {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 15px;
+  }
+  .educationContainer div i:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .educationContainer div i {
+    margin: 3px;
+    text-align: left;
+    font-size: 25px;
+    font-style: normal;
+  }
+  .techCareer {
+    width: 120%;
+    position: relative;
+    left: 60px;
+  }
+  .tech {
+    display: flex;
+    position: relative;
+    left: 20%;
+  }
+  .bachelorPic {
+    display: none;
+  }
+  .carousel-inner {
+    height: 200px;
+  }
+
+  li {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  /* ----------------------Experience ----------------------- */
+  .jobExperience {
+    color: rgb(45, 45, 45);
+    width: 70%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  .jobExperience p:nth-child(1) {
+    font-size: 30px;
+  }
+  .jobExperience p:nth-child(2) {
+    font-size: 20px;
+  }
+  .jobExperienceContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .jobExperienceContainer div i:nth-child(1) {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .jobExperienceContainer div i {
+    margin: 3px;
+    text-align: left;
+    font-size: 25px;
+    font-style: normal;
+  }
+  .jobExperienceContainer div span {
+    margin-left: 10px;
+  }
+  .companies {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .companies div {
+    width: 80%;
+    margin: 20px;
+  }
+  .companies div:nth-child(2) {
+    width: 80%;
+
+    border-radius: 40%;
+  }
+  /* -----------------------------------Footer---------------------- */
+  .insivibleFooter {
+    width: 100%;
+  }
+  .nameContainer {
+    color: whitesmoke;
+    position: fixed;
+    bottom: 5%;
+    left: 30%;
+    z-index: 2;
+  }
+  .quoteContainer {
+    bottom: 15%;
+    left: 10%;
+  }
+  .quoteContainer h4 {
+    font-size: 15px;
+    width: 80%;
   }
 }

@@ -1,0 +1,345 @@
+/* ---------------------Contact Info-------------------- */
+.contactMeContainer {
+  height: 1000px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactMeContainer div {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.contactMeContainer div h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.contactMeContainer div h5 {
+  font-size: 20px;
+}
+
+.directContactContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.directContactContainer div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.5em;
+  margin: 8px;
+  border: 5px;
+  border-color: rgb(99, 98, 98);
+  border-style: solid;
+}
+.directContactContainer div:hover {
+  transform: scale(1.1);
+}
+
+.directContactContainer div p {
+  font-size: 40px;
+  padding: 30px 30px 1% 30px;
+}
+.directContactContainer div p:nth-child(2) {
+  font-size: 20px;
+}
+.contactsInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contactsInfo span:nth-child(3) {
+  position: relative;
+  right: 30px;
+}
+.contactsInfo span:nth-child(2) {
+  position: relative;
+  right: 25px;
+}
+.city p {
+  position: relative;
+  top: 100px;
+  font-weight: bold;
+}
+/* -------------------------Form Side--------------------- */
+.contactMeForm {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  border-radius: 1em;
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 60%;
+  margin-top: 160px;
+  padding: 30px 0 30px 0px;
+}
+#submit {
+  background-color: gray;
+  width: 200px;
+}
+.form input {
+  border-radius: 1em;
+  width: 80%;
+  height: 60px;
+  margin: 10px;
+  margin-left: 35px;
+  border: 1px;
+  border-color: rgb(99, 98, 98);
+  border-style: solid;
+  padding: 10px;
+}
+
+.form input::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  position: relative;
+  left: 10px;
+}
+.form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form textarea {
+  border-radius: 1em;
+  width: 80%;
+  height: 40%;
+  margin: 10px;
+  resize: none;
+  margin-left: 35px;
+  border-color: rgb(99, 98, 98);
+
+  padding: 10px;
+}
+.form h3 {
+  color: whitesmoke;
+  margin-left: 30px;
+}
+/* LOCATION  */
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 200px;
+  width: 100%;
+}
+
+input:hover {
+  transform: scale(1.5);
+}
+textarea:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 800px) {
+  /* ---------------------Contact Info-------------------- */
+  .contactContainerDark {
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactContainerDark span {
+    color: rgb(45, 45, 45);
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactMeContainer {
+    position: relative;
+    top: 180px;
+    height: 1000px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactMeContainer div {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactMeContainer div h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .contactMeContainer div h5 {
+    font-size: 20px;
+  }
+
+  .directContactContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .directContactContainer div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.5em;
+    margin: 8px;
+    border: 5px;
+    border-color: rgb(99, 98, 98);
+    border-style: solid;
+  }
+  .directContactContainer div p {
+    font-size: 40px;
+    padding: 30px 30px 1% 30px;
+  }
+  .directContactContainer div p:nth-child(2) {
+    font-size: 20px;
+  }
+  .contactsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactsInfo span:nth-child(3) {
+    position: relative;
+    right: 0px;
+    bottom: 170px;
+  }
+  .contactsInfo span:nth-child(2) {
+    position: relative;
+    right: 0px;
+    bottom: 360px;
+  }
+  .contactsInfo span:nth-child(1) {
+    position: relative;
+    right: 0px;
+    bottom: 550px;
+  }
+  .city p {
+    position: relative;
+    top: 100px;
+    font-weight: bold;
+  }
+  /* -------------------------Form Side--------------------- */
+  .contactMeForm {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 40px 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 1440px) {
+  /* ---------------------Contact Info-------------------- */
+  .contactContainerDark {
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactContainerDark span {
+    color: rgb(45, 45, 45);
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactMeContainer {
+    position: relative;
+    top: 180px;
+    height: 1000px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactMeContainer div {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactMeContainer div h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .contactMeContainer div h5 {
+    font-size: 20px;
+  }
+
+  .directContactContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .directContactContainer div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.5em;
+    margin: 8px;
+    border: 5px;
+    border-color: rgb(99, 98, 98);
+    border-style: solid;
+  }
+  .directContactContainer div p {
+    font-size: 40px;
+    padding: 30px 30px 1% 30px;
+  }
+  .directContactContainer div p:nth-child(2) {
+    font-size: 20px;
+  }
+  .contactsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactsInfo span:nth-child(3) {
+    position: relative;
+    right: 0px;
+    bottom: 170px;
+  }
+  .contactsInfo span:nth-child(2) {
+    position: relative;
+    right: 0px;
+    bottom: 360px;
+  }
+  .contactsInfo span:nth-child(1) {
+    position: relative;
+    right: 0px;
+    bottom: 550px;
+  }
+  .city p {
+    position: relative;
+    top: 100px;
+    font-weight: bold;
+  }
+  /* -------------------------Form Side--------------------- */
+  .contactMeForm {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 40px 0;
+  }
+}
