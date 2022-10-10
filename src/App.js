@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { NavBar, Footer, Home, Contact, Portfolio } from "./components/index";
+import { NavBar, Footer, Home, Contact } from "./components/index";
 
 function App() {
   const [navLinkColor, setNavLinkColor] = React.useState(0);
